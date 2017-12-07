@@ -1,0 +1,80 @@
+.accordian-container
+{
+  background: mistyrose;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.accordian
+{
+  margin: 0 auto;
+  padding: 20px;
+  width: 400px;
+}
+
+.accordian li
+{
+  background: steelblue;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.accordian > li:last-child
+{
+  border-bottom: none;
+}
+
+.accordian > li a
+{
+  display: inline-block;
+  padding: 20px;
+  width: 100%;
+}
+
+.accordian > li a::before
+{
+  padding-right: 10px;
+}
+
+#database::before
+{
+  font-family: 'FontAwesome';
+  content: '\f1c0';
+}
+
+#coding::before
+{
+  font-family: 'FontAwesome';
+  content: '\f121';
+}
+
+#mobile::before
+{
+  font-family: 'FontAwesome';
+  content: '\f10b';
+}
+
+#global::before
+{
+  font-family: 'FontAwesome';
+  content: '\f0ac';
+}
+
+.accordian > li a::after
+{
+  font-family: 'FontAwesome';
+  content: '\f078';
+  padding-right: 10px;
+  position: relative;
+}
+
+.sub-menu
+{
+  width: 100%;
+  display: none;
+}
+
+.sub-menu > li:last-child
+{
+  border-bottom: none;
+}

@@ -1,0 +1,5 @@
+<% @pokemons.each do |pokemon| %>
+<h2><%= link_to "#{pokemon.nickname}", pokemon_path("#{pokemon.id}") %></h2>
+  <h3>Species: <%= pokemon.species %></h3>
+  <h4>Level: <%= pokemon.level %></h4>
+<% end %>

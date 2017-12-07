@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PokedexApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Pokedex</h1>
+    <%= link_to "View Pokedex", pokemons_path %> | <%= link_to "New Pokemon", new_pokemon_path %> | <a href="javascript:history.back()">Back</a>
+
+    <%= yield %>
+
+  </body>
+</html>
